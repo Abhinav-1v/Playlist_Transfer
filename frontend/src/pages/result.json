@@ -1,0 +1,34 @@
+[
+    {
+      "playlist": "Playlist Name 1",
+      "status": "partial", 
+      "successCount": 3,   
+      "totalTracks": 5,    
+      "failedTracks": [    
+        {
+          "name": "Track Name 1",
+          "artist": "Artist 1, Artist 2",
+          "reason": "No matching video found" 
+        },
+        {
+          "name": "Track Name 2",
+          "artist": "Artist 3",
+          "reason": "Failed to add to YouTube playlist"
+        }
+      ]
+    },
+    {
+      "playlist": "Playlist Name 2",
+      "status": "failure", 
+      "error": "Failed to fetch Spotify playlist tracks",
+      "failedTracks": [] 
+    },
+    {
+      "playlist": "Playlist Name 3",
+      "status": "success",
+      "successCount": 10,
+      "totalTracks": 10,
+      "failedTracks": []
+    }
+]
+
