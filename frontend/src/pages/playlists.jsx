@@ -72,12 +72,12 @@ export default function Playlist(){
   
   async function handleclick(){
     if(!youtubetoken){
-      window.location.href='http://localhost:3000/useyt/login';
+      window.location.href='https://playlist-transfer.onrender.com/useyt/useyt/login';
     }
     else{
       setloading(true);
 
-      const response= await fetch("http://localhost:3000/useyt/transferplaylist", {
+      const response= await fetch("https://playlist-transfer.onrender.com/useyt/transferplaylist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

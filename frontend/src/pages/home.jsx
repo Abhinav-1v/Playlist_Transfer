@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Home = () => {
   function handleclick(e){
     e.preventDefault();
-    window.location.href='http://localhost:3000/usesp/login';
+    window.location.href='https://playlist-transfer.onrender.com/usesp/login';
     // window.location.href='http://localhost:3000/debug';
   }
   return (
