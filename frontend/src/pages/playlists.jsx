@@ -72,7 +72,7 @@ export default function Playlist(){
   
   async function handleclick(){
     if(!youtubetoken){
-      window.location.href='https://playlist-transfer.onrender.com/useyt/useyt/login';
+      window.location.href='https://playlist-transfer.onrender.com/useyt/login';
     }
     else{
       setloading(true);
