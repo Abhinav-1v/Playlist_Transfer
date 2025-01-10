@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 const SPOTIFY_CLIENT_ID=process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET=process.env.SPOTIFY_CLIENT_SECRET;
 const SPOTIFY_REDIRECT_URI=process.env.SPOTIFY_REDIRECT_URI;
+const FRONTENDURL=process.env.FRONTENDURL;
 
 
 // Step 1: Redirect the user to Spotify's authorization page
@@ -41,7 +42,7 @@ app.get("/callback", async (req, res) => {
     );
     const { access_token, refresh_token } = tokenResponse.data;
 
-    return res.redirect(`http://localhost:5173/playlist?spotifyaccess_token=${access_token}`);
+    return res.redirect(`${FRONTENDURL}/playlist?spotifyaccess_token=${access_token}`);
   } catch (error) {
     console.error("Error exchanging code for token:", error.response?.data || error.message);
     res.status(500).send("Failed to retrieve access token.");

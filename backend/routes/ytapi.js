@@ -9,6 +9,7 @@ const app = Router();
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URL = process.env.REDIRECT_URL;
+const FRONTENDURL=process.env.FRONTENDURL;
 
 const oauth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -56,7 +57,7 @@ app.get('/oauth2callback', async (req, res) => {
   try {
     // Exchange the authorization code for tokens
     const { tokens } = await oauth2Client.getToken(code);
-    return res.redirect(`http://localhost:5173/playlist?youtubeaccess_token=${tokens.access_token}`);
+    return res.redirect(`${FRONTENDURL}/playlist?youtubeaccess_token=${tokens.access_token}`);
 
   } catch (error) {
     console.error('Error during token exchange:', error);
