@@ -17,7 +17,6 @@ const LandingPage = () => {
       <main>
         <div className="hero">
           <div className="textContent">
-            <h1>Syncify</h1>
             <h2>Your Playlists, Seamlessly Connected</h2>
             <p>
               Syncify makes it effortless to transfer playlists between your favorite music platforms. Switch services or 
@@ -89,6 +88,10 @@ const StyledWrapper = styled.div`
           font-size: 1.8rem;
           margin-bottom: 15px;
           color: #dcdcdc;
+          background: linear-gradient(90deg, #1db954, #00aaff);
+         -webkit-background-clip: text;
+          color: transparent;
+
         }
 
         p {
