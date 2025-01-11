@@ -7,8 +7,7 @@ export const PlaylistCard = ({ playlist, isSelected, handlePlaylistClick }) => {
       <div
         id={playlist.id}
         className={`music-content ${isSelected ? "active" : ""}`}
-        onClick={() => handlePlaylistClick(playlist)}
-      >
+        onClick={() => handlePlaylistClick(playlist)}>
         <div id={playlist.id} className="image-wrapper">
           <img id={playlist.id} src={playlist.images[0]?.url} alt="Playlist cover" />
         </div>
