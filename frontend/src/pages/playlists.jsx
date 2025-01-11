@@ -10,6 +10,8 @@ import { persistor } from '../redux/store';
 import { updatetransferdata } from '../redux/slices/transferslice';
 import { BeatLoader} from 'react-spinners';
 import styled from 'styled-components';
+import SplashCursor from '../components/splashcursor';
+
 
 export default function Playlist(){
   const playlists = useSelector((state) => state.playlists);
@@ -102,6 +104,7 @@ export default function Playlist(){
 
   return (
     <StyledWrapper>
+      <SplashCursor/>
       <header>
         <div className="logo">Syncify</div>
       </header>
