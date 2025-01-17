@@ -77,7 +77,7 @@
 
 ## Deployment
 
-Access the deployed application [here](https://your-deployed-app-link.com).  
+Access the deployed application [here](https://playlist-transfer-abhinavs-projects-6637da5b.vercel.app/).  
 The deployed code is available on [GitHub](https://github.com/Abhinav-1v/Playlist_Transfer_Deployment).
 
 ## Contributing
